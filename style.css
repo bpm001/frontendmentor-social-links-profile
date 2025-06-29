@@ -1,0 +1,89 @@
+/* Variables */
+@font-face{
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-style: normal;
+}
+:root{
+    --location-tags-color:hsl(75, 94%, 57%);
+    --text-color:hsl(0, 0%, 100%);
+
+    --grey-700:hsl(0, 0%, 20%);
+    --grey-800:hsl(0, 0%, 12%);
+    --grey-900:hsl(0, 0%, 8%);
+
+
+    
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    boz-sizing:border-box;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    justify-content: center;
+    min-height: 100vh;/*el minimo del body sera el 100% de la pantalla*/
+    align-items: center;/*alinea horizontalmente cuando direction es column*/
+    text-align: center;
+    background-color: var(--grey-900);
+    color: var(--text-color);
+    font-family: 'Inter';
+}
+
+.social-links-profile{
+    background-color: var(--grey-800);
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 0.9rem;
+
+
+}
+.social-links-profile__header{
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.social-links-profile__header .avatar{
+    border-radius: 100%;
+    width: 5rem;
+}
+.social-links-profile__header-data{
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.social-links-profile h2{
+    font-size:large;
+    font-weight: 700;
+}
+.social-links-profile h4{
+    font-size:smaller;
+    font-weight: 600;
+    color: var(--location-tags-color);
+}
+.social-links-profile h5{
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.social-links-profile__buttons{
+    list-style: none;
+    
+}
+.social-links-profile__buttons li{
+    background: var(--grey-700);
+    margin: 1rem 0px 0px 0px;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 13px;
+}
