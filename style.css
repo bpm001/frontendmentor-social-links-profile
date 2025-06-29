@@ -20,7 +20,7 @@
 *{
     margin:0;
     padding:0;
-    boz-sizing:border-box;
+    box-sizing:border-box;
     font-weight: 400;
     font-size: 14px;
 }
@@ -43,7 +43,7 @@ body{
 .social-links-profile{
     background-color: var(--grey-800);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 4.5rem;
     gap: 0.9rem;
 }
 .social-links-profile__header{
@@ -53,23 +53,23 @@ body{
 }
 .social-links-profile__header .avatar{
     border-radius: 100%;
-    width: 5rem;
+    width: 8rem;
 }
 .social-links-profile__header-data{
     justify-content: space-between;
     gap: 0.5rem;
 }
 .social-links-profile h2{
-    font-size:large;
+    font-size:x-large;
     font-weight: 700;
 }
-.social-links-profile h4{
-    font-size:smaller;
+.social-links-profile h3{
+    font-size:small;
     font-weight: 600;
     color: var(--location-tags-color);
 }
-.social-links-profile h5{
-    font-size: smaller;
+.social-links-profile h4{
+    font-size:small;
     font-weight: 400;
 }
 
@@ -84,4 +84,10 @@ body{
     border-radius: 0.4rem;
     font-weight: 600;
     font-size: 13px;
+}
+
+@media(max-width: 375px){
+    .social-links-profile{
+        padding: 3.5rem;
+    }
 }
